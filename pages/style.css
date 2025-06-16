@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 1rem;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+.dropdown {
+    font-size: 12px;
+    margin-left: 4px;
+}
+
+.search-icon {
+    width: 20px;
+    /* adjustment*/
+    height: 20px;
+    vertical-align: middle;
+    transition: opacity 0.3s ease;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #6feded;
+    padding: 60px 0px;
+}
+
+.contact-card {
+    background-color: transparent;
+    border: 1px solid #000;
+    padding: 20px 25px;
+    text-align: center;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.contact-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.contact-card p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.about-section {
+    background-color: #ffffff;
+    padding: 50px 40px;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.about-image img {
+    width: 320px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.about-content {
+    max-width: 700px;
+}
+
+.tabs {
+    display: flex;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.tab {
+    flex: 1;
+    padding: 12px 0;
+    text-align: center;
+    background-color: #3d51a3;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 16px;
+}
+
+.tab.active {
+    background-color: #a4d6ef;
+    color: #1e2b57;
+}
+
+.about-text {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444;
+}
