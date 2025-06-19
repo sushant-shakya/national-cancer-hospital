@@ -1,86 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>National Cancer Hospital</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
     <link rel="stylesheet" href="style.css" />
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- Navbar -->
-    <header class="navbar">
+    <header>
+      <div class="container">
         <div class="logo">
-            <img src="nch-logo.png" alt="NCH Logo" />
+          <img src="nch-logo.png" alt="NCH Logo" />
         </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a> <span class="dropdown">&#9662;</span></li>
-                <li><a href="#">SERVICES</a></li>
-                <li><a href="#">OUR DOCTORS</a></li>
-                <li><a href="#">GALLERY</a></li>
-                <li><a href="#">CONTACT</a></li>
-                <li><a href="#"><i class="fas fa-search"></i></a></li>
-            </ul>
-        </nav>
+
+        <div class="navbar">
+          <label for="menu-toggle" class="menu-icon">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+            <i class="fas fa-bars"></i>
+          </label>
+
+          <ul role="navigation" class="navbar-links">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a> <span class="dropdown">&#9662;</span></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">OUR DOCTORS</a></li>
+            <li><a href="#">GALLERY</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+
+          <a href="#search" class="search-icon"
+            ><i class="fas fa-search"></i
+          ></a>
+          <div id="search">
+            <a href="#" class="close-icon"><i class="fas fa-times"></i></a>
+            <input type="text" placeholder="Search..." name="search" />
+          </div>
+        </div>
+      </div>
     </header>
 
-    <section class="hero">
-        <img src="hero-pic.jpg" alt="Doctors Group Photo" />
-    </section>
+    <div class="hero">
+      <img src="hero-pic.jpg" alt="Doctors Group Photo" />
+    </div>
 
- 
     <section class="contact-info">
-        <div class="contact-card">
-            <h3>Contact Hospital</h3>
-            <p>+977-015906323</p>
-        </div>
-        <div class="contact-card">
-            <h3>Emergency Call</h3>
-            <p>+977-015906323</p>
-        </div>
-        <div class="contact-card">
-            <h3>Map & Direction</h3>
-            <p>Jaulakhel, Lalitpur, Nepal</p>
-        </div>
-        <div class="contact-card">
-            <h3>Email</h3>
-            <p>nationalcancerhospital@gmail.com</p>
-        </div>
+      <div class="contact-card">
+        <h3>Contact Hospital</h3>
+        <p>+977-015906323</p>
+      </div>
+      <div class="contact-card">
+        <h3>Emergency Call</h3>
+        <p>+977-015906323</p>
+      </div>
+      <div class="contact-card">
+        <h3>Map & Direction</h3>
+        <p>Jaulakhel, Lalitpur, Nepal</p>
+      </div>
+      <div class="contact-card">
+        <h3>Email</h3>
+        <p>nationalcancerhospital@gmail.com</p>
+      </div>
     </section>
 
     <!-- About Section -->
     <section class="about-section">
-        <div class="about-container">
-            <div class="about-image">
-                <img src="about-img.jpg" alt="Hospital Photo" />
-            </div>
-            <div class="about-content">
-                <div class="tabs">
-                    <button class="tab active">About</button>
-                    <button class="tab">Vision</button>
-                    <button class="tab">Mission</button>
-                </div>
-                <p class="about-text">
-                    Welcome to National Hospital and Cancer Center, where the story begins with hope and ends with triumph.
-                    National Cancer Hospital (NCH) is committed to providing comprehensive cancer care. Being the sole
-                    cancer centre we have been serving with surgery, medicine, chemotherapy, Day Care, Hospice and other
-                    facilities.
-                    While our roots lie in cancer care, our commitment extends beyond boundaries. Amidst the complexities of
-                    this formidable disease, our committed, experienced and updated health professionals are confident in
-                    providing the best health solutions to our patients for their well-being.
-                    <a href="#"></a><strong>Read More</strong></a>
-
-                </p>
-            </div>
+      <div class="about-container">
+        <div class="about-image">
+          <img src="about-img.jpg" alt="Hospital Photo" />
         </div>
+        <div class="about-content">
+          <div class="tabs">
+            <a class="tab" href="#about">About</a>
+            <a class="tab" href="#vision">Vision</a>
+            <a class="tab" href="#mission">Mission</a>
+          </div>
+
+          <p id="about" class="tab-content">
+            Welcome to National Hospital and Cancer Center, where the story
+            begins with hope and ends with triumph. National Cancer Hospital
+            (NCH) is committed to providing comprehensive cancer care. Being the
+            sole cancer centre we have been serving with surgery, medicine,
+            chemotherapy, Day Care, Hospice and other facilities. While our
+            roots lie in cancer care, our commitment extends beyond boundaries.
+            Amidst the complexities of this formidable disease, our committed,
+            experienced and updated health professionals are confident in
+            providing the best health solutions to our patients for their
+            well-being.
+            <a href="#">Read More</a>
+          </p>
+
+          <p id="vision" class="tab-content">
+            At the National Hospital & Cancer Center (NCH), our vision extends
+            beyond medical treatments. We are committed to empowering patients
+            throughout their cancer journey. Our personalized approach combines
+            cutting-edge therapies with compassionate support, ensuring that
+            each patient becomes an active participant in their healing process.
+            <a href="#">Read More</a>
+          </p>
+
+          <p id="mission" class="tab-content">
+            Our mission at the National Hospital & Cancer Center (NCH) is to
+            provide comprehensive and compassionate cancer care to every
+            patient, regardless of their background or circumstances. We
+            prioritize personalized attention, addressing physical, emotional,
+            and social needs. Our commitment extends to Nepali patients,
+            ensuring they receive world-class treatment right here in Nepal.
+            Moreover, we adhere to the latest guidelines and strive to offer
+            advanced medical treatments. Together, we create a community where
+            cancer is not just battled—it’s conquered.
+            <a href="#">Read More</a>
+          </p>
+        </div>
+      </div>
     </section>
-  
 
-</body>
+    <!-- SPECIALITIES SECTION -->
+    <section class="specialities">
+      <div class="container">
+        <div class="specialities-title">
+          <h2><span>Our</span> Specialities</h2>
+          <a href="#" class="see-more-button">See all</a>
+        </div>
 
+        <!-- LIST OF SERVICES -->
+        <div class="specialities-list">
+          <a href="#">
+            <img
+              src="https://nationalcancerhospital.com/wp-content/uploads/2023/12/pediatric-e1718869373680.jpeg"
+              alt="Speciality 1"
+            />
+            <h3>Medical Oncology</h3></a
+          >
+          <a href="#">
+            <img
+              src="https://nationalcancerhospital.com/wp-content/uploads/2023/12/pediatric-e1718869373680.jpeg"
+              alt="Speciality 1"
+            />
+            <h3>Medical Oncology</h3> </a
+          ><a href="#">
+            <img
+              src="https://nationalcancerhospital.com/wp-content/uploads/2023/12/pediatric-e1718869373680.jpeg"
+              alt="Speciality 1"
+            />
+            <h3>Medical Oncology</h3> </a
+          ><a href="#">
+            <img
+              src="https://nationalcancerhospital.com/wp-content/uploads/2023/12/pediatric-e1718869373680.jpeg"
+              alt="Speciality 1"
+            />
+            <h3>Medical Oncology</h3> </a
+          ><a href="#">
+            <img
+              src="https://nationalcancerhospital.com/wp-content/uploads/2023/12/pediatric-e1718869373680.jpeg"
+              alt="Speciality 1"
+            />
+            <h3>Medical Oncology</h3> </a
+          ><a href="#">
+            <img
+              src="https://nationalcancerhospital.com/wp-content/uploads/2023/12/pediatric-e1718869373680.jpeg"
+              alt="Speciality 1"
+            />
+            <h3>Medical Oncology</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <h2><span>Features of NCH</span></h2>
+        <p>
+          Explore National Hospital & Cancer Center advanced medical services,
+          expert care, and commitment to affordable, inclusive healthcare for
+          all individuals.
+        </p>
+        <div>
+          <a href="#">
+            <i class="fas fa-hospital"></i>
+            <h3>Advanced Medical Services</h3>
+          </a>
+          <a href="#">
+            <i class="fas fa-hospital"></i>
+            <h3>Advanced Medical Services</h3>
+          </a>
+          <a href="#">
+            <i class="fas fa-hospital"></i>
+            <h3>Advanced Medical Services</h3>
+          </a>
+          <a href="#">
+            <i class="fas fa-hospital"></i>
+            <h3>Advanced Medical Services</h3>
+          </a>
+          <a href="#">
+            <i class="fas fa-hospital"></i>
+            <h3>Advanced Medical Services</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="whynch">
+      <div class="container">
+        <div class="whynch-title">
+          <h2><span>Why</span> Nch</h2>
+        </div>
+        <p>
+          • Holistic Cancer Care Treatment
+        </p><br>
+        <p>
+          • Expert Teams
+        </p><br>
+        <p>
+          • Professional Training
+        </p><br>
+        <p>
+          • 1 lakh from the Central Government and 50 Thousand from the Selected Province Government for the Needy Patient.
+</p><br>
+<p>
+  • Feasible Location
+</p>
+        </div>
+      </div>
+    </section>
+    <section class="blog">
+      <div class="container">
+        <h2><span>Let's Talk Health</span></h2>
+  </body>
 </html>

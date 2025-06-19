@@ -1,142 +1,394 @@
+:root {
+  --blue-100: #6feded;
+  --blue-150: #a4d6ef;
+  --blue-900: #3d51a3;
+  --orange: #c22d00;
+  --grey100: #e8e8e8;
+  --secondary-color: #fff;
+  --text-color: #333;
+  --font-family: "Khand", "Segoe UI", sans-serif;
+}
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #fff;
+  background-color: #fff;
+  font-family: var(--font-family);
+  color: var(--text-color);
+  line-height: 1.4;
+  font-size: 1rem;
 }
 
-/* Navbar */
-.navbar {
+.container {
+  width: min(100%, 76.875rem);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+section {
+  padding: 48px 0;
+}
+
+.see-more-button {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: var(--orange);
+  color: var(--secondary-color);
+  text-decoration: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  min-width: 150px;
+  font-size: 14px;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: .5rem 1rem;
-    border-bottom: 1px solid #ccc;
-    background-color: #fff;
+  }
 }
 
-.logo img {
+.logo {
+  img {
     height: 50px;
+  }
 }
 
-.nav-links {
+.menu-icon {
+  position: relative;
+  display: none;
+
+  input {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.navbar {
+  display: flex;
+  gap: 24px;
+
+  .navbar-links {
     list-style: none;
     display: flex;
     gap: 25px;
     align-items: center;
-}
 
-.nav-links li a {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-    font-size: 14px;
+    li {
+      a {
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+        font-size: 14px;
+      }
+    }
+  }
 }
-
 
 .dropdown {
-    font-size: 12px;
-    margin-left: 4px;
+  font-size: 12px;
+  margin-left: 4px;
 }
 
-.search-icon {
-    width: 20px;
-    /* adjustment*/
-    height: 20px;
-    vertical-align: middle;
-    transition: opacity 0.3s ease;
+.search-icon,
+.close-icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  transition: opacity 0.3s ease;
+}
+
+#search {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  padding: 20px;
+}
+
+#search:target {
+  display: block;
 }
 
 .hero img {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-
 .contact-info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #6feded;
-    padding: 60px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: var(--blue-100);
+  padding: 60px 0px;
 }
 
 .contact-card {
-    background-color: transparent;
-    border: 1px solid #000;
-    padding: 20px 25px;
-    text-align: center;
-    min-width: 200px;
-    margin: 10px;
+  background-color: transparent;
+  border: 1px solid #000;
+  padding: 20px 25px;
+  text-align: center;
+  min-width: 200px;
+  margin: 10px;
 }
 
 .contact-card h3 {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
 }
 
 .contact-card p {
-    font-size: 14px;
-    font-weight: 500;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .about-section {
-    background-color: #ffffff;
-    padding: 50px 40px;
+  background-color: #ffffff;
+  padding: 50px 40px;
 }
 
 .about-container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
 .about-image img {
-    width: 320px;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  width: 320px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
 .about-content {
-    max-width: 700px;
+  max-width: 700px;
 }
 
 .tabs {
-    display: flex;
-    border-radius: 6px;
-    overflow: hidden;
-    margin-bottom: 15px;
+  display: flex;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 15px;
 }
 
 .tab {
-    flex: 1;
-    padding: 12px 0;
+  flex: 1;
+  padding: 12px 0;
+  text-align: center;
+  background-color: var(--blue-150);
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+
+  font-size: 16px;
+}
+
+.tab-content {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444;
+  display: none;
+}
+body:not(:has(.tab-content:target)) .tab-content:first-of-type {
+  display: block;
+}
+.tab-content:target {
+  display: block;
+}
+
+/* Tab link styles */
+.tabs .tab {
+  padding: 10px 15px;
+  display: inline-block;
+  text-decoration: none;
+  background: var(--blue-900);
+  color: var(--blue-150);
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+/* Active tab styling */
+.tabs .tab:target,
+.tabs .tab.active {
+  background: var(--blue-150);
+  color: white;
+}
+
+/* Make the correct tab look active when corresponding tab-content is targeted */
+
+body:has(#about:target) .tabs .tab[href="#about"] {
+  background-color: var(--blue-150);
+  color: var(--blue-900);
+}
+
+body:has(#vision:target) .tabs .tab[href="#vision"] {
+  background-color: var(--blue-150);
+  color: var(--blue-900);
+}
+
+body:has(#mission:target) .tabs .tab[href="#mission"] {
+  background-color: var(--blue-150);
+  color: var(--blue-900);
+}
+
+/* Default active tab if no target */
+body:not(:has(.tab-content:target)) .tabs .tab[href="#about"] {
+  background: var(--blue-100);
+  color: white;
+}
+
+.specialities {
+  background-color: var(--grey100);
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    color: var(--text-color);
+    span {
+      color: var(--orange);
+    }
+  }
+
+  .see-more-button {
+    margin-top: 3rem;
+  }
+
+  .specialities-list {
+    width: min(100%, 55rem);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  a:not(.see-more-button) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    flex-direction: column;
+    padding: 16px;
+    background-color: var(--blue-100);
+    border-radius: 8px;
+    color: var(--text-color);
+
+    img {
+      width: 46px;
+      height: 46px;
+      object-fit: cover;
+      border-radius: 50px;
+      border: 1px solid black;
+    }
+  }
+}
+
+.features {
+  margin-top: ;
+  h2 {
     text-align: center;
-    background-color: #3d51a3;
-    color: white;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-    font-family: 'Segoe UI', sans-serif;
-    font-size: 16px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: var(--orange);
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    span {
+      position: relative;
+      background-color: white;
+      padding: 0 50px;
+    }
+  }
+  p{
+    text-align:  center ;
+    
+  }
 }
 
-.tab.active {
-    background-color: #a4d6ef;
-    color: #1e2b57;
-}
+.whynch {
+  background-color: var(--grey100);
 
-.about-text {
-    font-size: 15px;
-    line-height: 1.6;
-    color: #444;
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    color: var(--text-color);
+    span {
+      color: var(--orange);
+    }
+  }
+
+
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: inline-flex;
+  }
+
+  .navbar {
+    .navbar-links {
+      display: none;
+    }
+  }
+
+  .menu-icon:has(input:checked) + .navbar-links {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 64px;
+    width: 100%;
+    background: white;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    width: 100%;
+  }
 }
