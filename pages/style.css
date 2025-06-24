@@ -579,6 +579,43 @@ body:not(:has(.tab-content:target)) .tabs .tab[href="#about"] {
   }
 }
 
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px ;
+}
+
+.blog-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  width: 300px;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-text {
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+}
+
+
 /* gallery page */
 .gallery-title {
   text-align: left;
@@ -711,6 +748,60 @@ body:not(:has(.tab-content:target)) .tabs .tab[href="#about"] {
   color: #444;
   font-weight: 400;
   line-height: 1.4;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 40px;
+  background: #f4f4f4;
+}
+
+.contact-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-left form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-left label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-left input,
+.contact-left textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #000;
+  background: transparent;
+  outline: none;
+}
+
+.contact-right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-info p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.map-box {
+  margin-top: 20px;
+  width: 100%;
+  height: 250px;
 }
 
 footer {

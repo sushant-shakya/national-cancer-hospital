@@ -1,132 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>National Cancer Hospital</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body class="pg-services">
-    <!-- Navbar -->
-    <header>
-      <div class="container">
-        <div class="logo">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>National Cancer Hospital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="pg-services">
+  <!-- Navbar -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="home.html">
           <img src="nch-logo.png" alt="NCH Logo" />
-        </div>
+        </a>
+      </div>
 
-        <div class="navbar">
-          <label for="menu-toggle" class="menu-icon">
-            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-            <i class="fas fa-bars"></i>
-          </label>
+      <div class="navbar">
+        <label for="menu-toggle" class="menu-icon">
+          <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+          <i class="fas fa-bars"></i>
+        </label>
 
-          <ul role="navigation" class="navbar-links">
-            <li><a href="home.html">HOME</a></li>
-            <li><a href="#">ABOUT</a> <span class="dropdown">&#9662;</span></li>
-            <li><a href="services.html">SERVICES</a></li>
-            <li><a href="#">OUR DOCTORS</a></li>
-            <li><a href="gallery.html">GALLERY</a></li>
-            <li><a href="#">CONTACT</a></li>
-          </ul>
+        <ul role="navigation" class="navbar-links">
+          <li><a href="home.html">HOME</a></li>
+          <li>
+            <a href="#">ABOUT</a> <span class="dropdown">&#9662;</span>
 
-          <a href="#search" class="search-icon"
-            ><i class="fas fa-search"></i
-          ></a>
-          <div id="search">
-            <a href="#" class="close-icon"><i class="fas fa-times"></i></a>
-            <input type="text" placeholder="Search..." name="search" />
-          </div>
+            <nav class="dropdown-menu">
+              <a class="dropdown-item" href="/pages/about.html"> About Us</a>
+              <a class="dropdown-item" href="/pages/message.html">Message From the Chairman</a>
+              <a class="dropdown-item" href="/pages/board.html">Board of Directors</a>
+            </nav>
+          </li>
+          <li><a href="services.html">SERVICES</a></li>
+          <li><a href="/pages/our-doctors.html">OUR DOCTORS</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+
+        <a href="#search" class="search-icon"><i class="fas fa-search"></i></a>
+        <div id="search">
+          <a href="#" class="close-icon"><i class="fas fa-times"></i></a>
+          <input type="text" placeholder="Search..." name="search" />
         </div>
       </div>
-    </header>
-    
-        <section class="specialities specialities-pg">
-            <div class="container">
-              <div class="specialities-title">
-                <h2><span>Our</span> Specialities</h2>
-              </div>
-              <div class="specialities-list">
-                <a href="#">
-                  <img
-                    src="https://nationalcancerhospital.com/wp-content/uploads/2023/12/pediatric-e1718869373680.jpeg"
-                    alt="Speciality 1"
-                  />
-                  <h3>Medical Oncology</h3></a
-                >
-                <a href="#">
-                  <img
-                    src="https://nationalcancerhospital.com/wp-content/uploads/2023/12/pediatric-e1718869373680.jpeg"
-                    alt="Speciality 1"
-                  />
-                  <h3>Medical Oncology</h3> </a
-                ><a href="#">
-                  <img
-                    src="https://nationalcancerhospital.com/wp-content/uploads/2023/12/pediatric-e1718869373680.jpeg"
-                    alt="Speciality 1"
-                  />
-                  <h3>Medical Oncology</h3> </a
-                ><a href="#">
-                  <img
-                    src="https://nationalcancerhospital.com/wp-content/uploads/2023/12/pediatric-e1718869373680.jpeg"
-                    alt="Speciality 1"
-                  />
-                  <h3>Medical Oncology</h3> </a
-                ><a href="#">
-                  <img
-                    src="https://nationalcancerhospital.com/wp-content/uploads/2023/12/pediatric-e1718869373680.jpeg"
-                    alt="Speciality 1"
-                  />
-                  <h3>Medical Oncology</h3> </a
-                ><a href="#">
-                  <img
-                    src="https://nationalcancerhospital.com/wp-content/uploads/2023/12/pediatric-e1718869373680.jpeg"
-                    alt="Speciality 1"
-                  />
-                  <h3>Medical Oncology</h3>
-                  <a href="#">
-                    <img
-                      src="https://nationalcancerhospital.com/wp-content/uploads/2023/12/pediatric-e1718869373680.jpeg"
-                      alt="Speciality 1"
-                    />
-                    <h3>Medical Oncology</h3>
-                </a>
-                <a href="#">
-                    <img
-                      src="https://nationalcancerhospital.com/wp-content/uploads/2023/12/pediatric-e1718869373680.jpeg"
-                      alt="Speciality 1"
-                    />
-                    <h3>Medical Oncology</h3>
-                    </a>
-                    <a href="#">
-                        <img
-                          src="https://nationalcancerhospital.com/wp-content/uploads/2023/12/pediatric-e1718869373680.jpeg"
-                          alt="Speciality 1"
-                        />
-                        <h3>Medical Oncology</h3>
-                        </a>
-                        <a href="#">
-                            <img
-                              src="https://nationalcancerhospital.com/wp-content/uploads/2023/12/pediatric-e1718869373680.jpeg"
-                              alt="Speciality 1"
-                            />
-                            <h3>Medical Oncology</h3>
-                            </a>
-              </div>
-              </div>
-              </section>
-  
+    </div>
+  </header>
 
-    
+  <section class="specialities specialities-pg">
+    <div class="container">
+      <div class="specialities-title">
+        <h2><span>Our</span> Specialities</h2>
+      </div>
+      <div class="specialities-list">
+        <a href="#">
+          <img src="https://nationalcancerhospital.com/wp-content/uploads/2023/12/pediatric-e1718869373680.jpeg"
+            alt="Speciality 1" />
+          <h3>Medical Oncology</h3>
+        </a>
+        <a href="#">
+          <img src="https://nationalcancerhospital.com/wp-content/uploads/2023/12/pediatric-e1718869373680.jpeg"
+            alt="Speciality 1" />
+          <h3>Medical Oncology</h3>
+        </a><a href="#">
+          <img src="https://nationalcancerhospital.com/wp-content/uploads/2023/12/pediatric-e1718869373680.jpeg"
+            alt="Speciality 1" />
+          <h3>Medical Oncology</h3>
+        </a><a href="#">
+          <img src="https://nationalcancerhospital.com/wp-content/uploads/2023/12/pediatric-e1718869373680.jpeg"
+            alt="Speciality 1" />
+          <h3>Medical Oncology</h3>
+        </a><a href="#">
+          <img src="https://nationalcancerhospital.com/wp-content/uploads/2023/12/pediatric-e1718869373680.jpeg"
+            alt="Speciality 1" />
+          <h3>Medical Oncology</h3>
+        </a><a href="#">
+          <img src="https://nationalcancerhospital.com/wp-content/uploads/2023/12/pediatric-e1718869373680.jpeg"
+            alt="Speciality 1" />
+          <h3>Medical Oncology</h3>
+          <a href="#">
+            <img src="https://nationalcancerhospital.com/wp-content/uploads/2023/12/pediatric-e1718869373680.jpeg"
+              alt="Speciality 1" />
+            <h3>Medical Oncology</h3>
+          </a>
+          <a href="#">
+            <img src="https://nationalcancerhospital.com/wp-content/uploads/2023/12/pediatric-e1718869373680.jpeg"
+              alt="Speciality 1" />
+            <h3>Medical Oncology</h3>
+          </a>
+          <a href="#">
+            <img src="https://nationalcancerhospital.com/wp-content/uploads/2023/12/pediatric-e1718869373680.jpeg"
+              alt="Speciality 1" />
+            <h3>Medical Oncology</h3>
+          </a>
+          <a href="#">
+            <img src="https://nationalcancerhospital.com/wp-content/uploads/2023/12/pediatric-e1718869373680.jpeg"
+              alt="Speciality 1" />
+            <h3>Medical Oncology</h3>
+          </a>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="">
+          <h6>About</h6>
+          <p class="text-justify">
+            National Cancer Hospital (NCH), established in 2009, stands as a
+            guiding force in Nepal’s battle against cancer. Our unwavering
+            mission is to provide accessible, top-tier care to patients
+            nationwide. With a dedicated team of experienced doctors, we bring
+            years of collective expertise to the forefront of cancer
+            treatment.
+          </p>
+        </div>
+
+        <div class="">
+          <h6>Specialties</h6>
+          <ul class="footer-links">
+            <li><a href="/pages/services.html">PATHOLOGY</a></li>
+            <li><a href="/pages/services.html">Onco-surgery</a></li>
+            <li><a href="/pages/services.html">Gyane-Oncology</a></li>
+            <li><a href="/pages/services.html">CLINICAL ONCOLOGY</a></li>
+          </ul>
+        </div>
+
+        <div class="">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="/pages/about.html">About Us</a></li>
+            <li><a href="/pages/our-doctors.html">OUR DOCTORS</a></li>
+            <li><a href="/pages/gallery.html">GALLERY</a></li>
+            <li><a href="/pages/contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="">
+          <p class="copyright-text">
+            Copyright © 2024 National Hospital and Cancer Center. All rights
+            reserved.
+          </p>
+        </div>
+
+        <div class="">
+          <ul class="social-icons">
+            <li>
+              <a class="facebook" href="https://www.facebook.com/NationalHospitalCancerResearchCenter"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a class="yo" href="https://www.youtube.com/NationalHospitalCancerResearchCenter"><i class="fab fa-youtube"></i></a>
+            </li>
+            <li>
+              <a class="Instagram" href="https://www.instagram.com/NationalHospitalCancerResearchCenter"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>
